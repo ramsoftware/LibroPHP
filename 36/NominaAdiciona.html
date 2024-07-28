@@ -1,0 +1,54 @@
+﻿<!DOCTYPE HTML><html>
+<head>
+	<title>Adicionar Empleado</title>
+</head>
+
+<body>
+	<h1>Adicionar Empleado</h1>
+
+<form action="NominaAdicionaReal.php" method="get">
+	<p>Nombre 1: <input type="text" name="nombre1" value="NN"/></p>
+	<p>Nombre 2: <input type="text" name="nombre2" value="NN" /></p>
+	<p>Apellido 1: <input type="text" name="apellido1" value="NN"/></p>
+	<p>Apellido 2: <input type="text" name="apellido2" value="NN"/></p>
+	
+	<p>Tipo de Sangre: 
+	<select name="tiposangre"> 
+		<option value="A+">A+</option>
+		<option value="A-">A-</option>
+		<option value="B+">B+</option>
+		<option value="B-">B-</option>
+		<option value="AB+">AB+</option>
+		<option value="AB-">AB-</option>
+		<option value="O+">O+</option>
+		<option value="O-">O-</option>
+	</select> 
+	</p>
+	
+	<p>Estado civil: <select name="estadocivil">{estadocivil}</select></p>
+	<p>Ciudad: <select name="ciudad">{ciudad}</select></p>
+	
+	<p>Altura: <input type="text" name="altura" value="0" /></p>
+	<p>Peso: <input type="text" name="peso" value="0" /></p>
+	<p>Fecha de nacimiento (dd/mm/yyyy): <input type="text" name="fechanace" value="1980/01/01" /></p>
+	<p>Número de calzado: <input type="text" name="numerocalzado" value="0" /></p>
+
+	<p>Color de ojos: <select name="colorojos">{colorojos}</select></p>
+	
+	<p>¿Zurdo o diestro?: 
+	<select name="zurdodiestro" > 
+		<option value="Z">Zurdo</option>
+		<option value="D">Diestro</option>
+	</select> 
+	</p>
+
+	<p>EPS: <select name="eps">{eps}</select></p>
+	<p>Fondo de pensiones: <select name="fondopensiones">{fondopensiones}</select></p>
+	<p>Profesión: <select name="profesion">{profesion}</select></p>
+	<p>División donde trabaja: <select name="division">{division}</select></p>
+	<p><input type="submit" value="Adicionar empleado"/></p>
+</form>
+
+<p><a href="Nomina.php?posicion={posicion}">Cancelar adición</a></a></p>
+</body>
+</html>
